@@ -5,7 +5,7 @@
  */
 package com.vehicles;
 
-public class VehicleManufacturer {
+public abstract class VehicleManufacturer {
     // Declaring a variable.
     private String vehicleName;
     // Declaring a variable.
@@ -43,15 +43,8 @@ public class VehicleManufacturer {
         this.vehicleType = vehicleType;
     }
 
-    /**
-     * This function returns the manufacturer of the device.
-     *
-     * @return The manufacturer of the product.
-     */
-    public String getManufacturer() {
-        return null;
-    }
 
+    public abstract String getManufacturer();
     @Override
     // A method that returns a string representation of the object.
     public String toString() {
